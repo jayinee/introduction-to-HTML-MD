@@ -54,7 +54,7 @@ The HTML specification urges web page authors to use `<div>` as “an element of
 ## Advantages
 
 1.	More flexible - you can layout the same markup many ways, which means when you have to do a re-branding/update to the site,
-    you may not even have to touch the HTML 
+        you may not even have to touch the HTML 
 
 2.	Easier to understand and debug: Having 1 master table for layout is easy to work with, but 
     when you start having to go down to 6 or 7 nested tables to achieve your design, it becomes a nightmare. 
@@ -128,8 +128,8 @@ Output:
 Ordered HTML Lists - The Type Attribute
 A type attribute can be added to an ordered list, to define the type of the marker:
 
-|Type	    |Description                                                 |
-|---------|------------------------------------------------------------|
+|Type	        |Description                                                 |
+|---------------|------------------------------------------------------------|
 |type="1"	|The list items will be numbered with numbers (default)      |
 |type="A"	|The list items will be numbered with uppercase letters      |
 |type="a"	|The list items will be numbered with lowercase letters      |
@@ -150,7 +150,7 @@ By default, links will appear as follows in all browsers:
 |Attribute  |href                                                                                                                   |
 |-----------|-----------------------------------------------------------------------------------------------------------------------|
 |Value:     |URL                                                                                                                    |
-|Description| Specifies the URL of the page the link goes to. If the href attribute is not present, the <a> tag is not a hyperlink. |
+|Description| Specifies the URL of the page the link goes to. If the href attribute is not present, the `<a>` tag is not a hyperlink| 
 
 Example:
 ```
@@ -166,10 +166,10 @@ Attribute: target
 |-----------------|--------------------------------------------------------------|
 |_blank           |Opens the linked document in a new window or tab              |
 |_self	          |Opens the linked document in the same frame as it was clicked |
-|_parent	        |Opens the linked document in the parent frame                 |
-|_top	            |Opens the linked document in the full body of the window      |
+|_parent	  |Opens the linked document in the parent frame                 |
+|_top	          |Opens the linked document in the full body of the window      |
+|framename	  |Opens the linked document in a named frame                    |
 
-framename	Opens the linked document in a named frame
 
 Syntax:
 
@@ -193,7 +193,7 @@ The HTML`<form>` element represents a document section that contains interactive
 
 |Attribute  | action                                                                                                                |
 |-----------|-----------------------------------------------------------------------------------------------------------------------|
-|Value      |Description                                                                                                            |                                                                                                                   |
+|Value      |Description                                                                                                            |
 |URL        |Where to send the form-data when the form is submitted.                                                                |
 	         
 	          
@@ -208,26 +208,24 @@ A relative URL - points to a file within a web site
 ```
 (like action="example.htm")
 ```
+
 ```
 Syntax:
 <form action="URL">
 ```
+
 ```
 Example:
-
 <form action="demo_form.asp" method="get">
   First name: <input type="text" name="fname"><br>
   Last name: <input type="text" name="lname"><br>
   <input type="submit" value="Submit">
 </form>
 ```
-|Attribute  | method                                                                                                                    |
-|-----------|---------------------------------------------------------------------------------------------------------------------------|
-|Value      |get, post                                                                                                                  |                                                                                                                   |
-|Description|The method attribute specifies how to send form-data (the form-data is sent to the page specified in the action attribute).|                                                        |
-Attribute: 
 
-Value: 
+|Attribute  | method                                                                                                                 |
+|-----------|------------------------------------------------------------------------------------------------------------------------|
+|Value:     |get, post                                                                                                               | |Description|The method attribute specifies how to send form-data(the form-data is sent to the page specified in the actionattribute)|                                                        
 
 
 
@@ -240,38 +238,44 @@ Example:
   Last name: <input type="text" name="lname"><br>
   <input type="submit" value="Submit">
 </form>
- 
+``` 
+
+```
+## 6. The `input` element has an attribute called "type." Discuss the purpose and function of this attribute, and list some of the values 'type' can be.
+```
 
 
-6.	The `input` element has an attribute called "type." Discuss the purpose and function of this attribute, and list some of the values 'type' can be.
 
-Attribute: type
 
-Value 	Description
+```
 
-button	       Defines a clickable button (mostly used with a JavaScript to activate a script)
-checkbox	       Defines a checkbox
-color	                 Defines a color picker
-date	                 Defines a date control (year, month and day (no time))
-datetime	       The input type datetime has been removed from the HTML standard. Use datetime-local instead.
-datetime-local     Defines a date and time control (year, month, day, hour,  minute, second, and fraction of a second (no time zone)
-email	                  Defines a field for an e-mail address
-file	                  Defines a file-select field and a "Browse..." button (for file uploads)
-hidden	        Defines a hidden input field
-image                  Defines an image as the submit button
-month	        Defines a month and year control (no time zone)
-number	        Defines a field for entering a number
-password	        Defines a password field (characters are masked)
-radio	                  Defines a radio button
-range	                  Defines a control for entering a number whose exact value is not important (like a slider control)
-reset	                  Defines a reset button (resets all form values to default values)
-search	     Defines a text field for entering a search string
-submit	     Defines a submit button
-tel	               Defines a field for entering a telephone number
-text	               Default. Defines a single-line text field (default width is 20 characters)
-time	               Defines a control for entering a time (no time zone)
-url	               Defines a field for entering a URL
-week	               Defines a week and year control (no time zone)
+|Attribute: |type                                                                                                                    |
+|-----------|------------------------------------------------------------------------------------------------------------------------|
+|Value:     |Description                                                                                                             |
+|button	    |Defines a clickable button (mostly used with a JavaScript to activate a script)                                         |
+|checkbox   |Defines a checkbox                                                                                                      |
+|color	    |Defines a color picker                                                                                                  |
+|date	    |Defines a date control (year, month and day (no time))                                                                  |
+|datetime   |The input type datetime has been removed from the HTML standard. Use datetime-local instead.                            |
+|dttimelocal|Defines a date and time control (year, month, day, hour,  minute, second, and fraction of a second (no time zone)       |
+|email	    |Defines a field for an e-mail address                                                                                   |
+|file	    |Defines a file-select field and a "Browse..." button (for file uploads)                                                 |
+|hidden	    |Defines a hidden input field                                                                                            |
+|image      |Defines an image as the submit button                                                                                   |
+|month	    |Defines a month and year control (no time zone)                                                                         |
+|number	    |Defines a field for entering a number                                                                                   |
+|passwor    |Defines a password field (characters are masked)                                                                        |
+|radio	    |Defines a radio button                                                                                                  |
+|range	    |Defines a control for entering a number whose exact value is not important (like a slider control)                      |
+|reset	    |Defines a reset button (resets all form values to default values)                                                       |
+|search	    |Defines a text field for entering a search string                                                                       |
+|submit	    |Defines a submit button                                                                                                 |
+|tel	    |Defines a field for entering a telephone number                                                                         |
+|text	    |Default. Defines a single-line text field (default width is 20 characters)                                              |
+|time	    |Defines a control for entering a time (no time zone)                                                                    |
+|url	    |Defines a field for entering a URL                                                                                      |
+|week	    |Defines a week and year control (no time zone)                                                                          |
+
 
 
 Syntax:
@@ -279,7 +283,7 @@ Syntax:
 
 Example:
 <input type="button" value="Click me" onclick="msg()">
-
+```
 
 
 
