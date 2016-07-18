@@ -223,31 +223,23 @@ Example:
 </form>
 ```
 
+
 |Attribute  | method                                                                                                                 |
 |-----------|------------------------------------------------------------------------------------------------------------------------|
 |Value:     |get, post                                                                                                               | |Description|The method attribute specifies how to send form-data(the form-data is sent to the page specified in the actionattribute)|                                                        
 
-
-
-
 The form-data can be sent as URL variables (with method="get") or as HTTP post transaction (with method="post").
-
+```
 Example:
 <form action="demo_form.asp" method="get">
   First name: <input type="text" name="fname"><br>
   Last name: <input type="text" name="lname"><br>
   <input type="submit" value="Submit">
 </form>
-``` 
-
 ```
+
 ## 6. The `input` element has an attribute called "type." Discuss the purpose and function of this attribute, and list some of the values 'type' can be.
-```
 
-
-
-
-```
 
 |Attribute: |type                                                                                                                    |
 |-----------|------------------------------------------------------------------------------------------------------------------------|
@@ -277,7 +269,7 @@ Example:
 |week	    |Defines a week and year control (no time zone)                                                                          |
 
 
-
+```
 Syntax:
 <input type="value">
 
